@@ -27,15 +27,6 @@ namespace WebAPI.Controllers
         #endregion
 
         #region Public methods
-        [HttpGet("getAll")]
-        [AllowAnonymous]
-        public IActionResult GetAll()
-        {
-            var result = _userService.GetAll();
-
-            return Ok(result);
-        }
-
         /// <summary>
         /// Registration a new user
         /// </summary>
